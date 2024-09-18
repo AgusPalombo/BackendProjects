@@ -1,0 +1,26 @@
+{{!-- Extiende el layout --}}
+{{> layout}}
+
+<h1>Formulario de Currículum</h1>
+<form action="/submit" method="post" enctype="multipart/form-data">
+    <label for="name">Nombre:</label>
+    <input type="text" name="name" required><br>
+
+    <label for="surname">Apellido:</label>
+    <input type="text" name="surname" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" required><br>
+
+    <label for="phone">Teléfono:</label>
+    <input type="text" name="phone" required><br>
+
+    <label for="dni">DNI:</label>
+    <input type="text" name="dni" required><br>
+
+    <label for="file">Currículum (PDF):</label>
+    <input type="file" name="file" accept=".pdf" required><br>
+
+    <button type="submit">Enviar</button>
+</form>
+
